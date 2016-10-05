@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2A6DE91DA53A0E00F16EBB /* page5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A6DE81DA53A0E00F16EBB /* page5.swift */; };
 		0E336ACD1DA2A7D500F3EB0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E336ACC1DA2A7D500F3EB0C /* AppDelegate.swift */; };
 		0E336ACF1DA2A7D500F3EB0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E336ACE1DA2A7D500F3EB0C /* ViewController.swift */; };
 		0E336AD21DA2A7D500F3EB0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E336AD01DA2A7D500F3EB0C /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2A6DE81DA53A0E00F16EBB /* page5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = page5.swift; sourceTree = "<group>"; };
 		0E336AC91DA2A7D500F3EB0C /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E336ACC1DA2A7D500F3EB0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E336ACE1DA2A7D500F3EB0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				0E336AE01DA2A8A700F3EB0C /* UpdatedViewController.swift */,
 				0E336AE21DA2ABFF00F3EB0C /* Piano.swift */,
 				0E336AE41DA2ACF800F3EB0C /* FamilyViewController.swift */,
+				0E2A6DE81DA53A0E00F16EBB /* page5.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				0E336AE11DA2A8A700F3EB0C /* UpdatedViewController.swift in Sources */,
 				0E336AE31DA2ABFF00F3EB0C /* Piano.swift in Sources */,
+				0E2A6DE91DA53A0E00F16EBB /* page5.swift in Sources */,
 				0E336ACF1DA2A7D500F3EB0C /* ViewController.swift in Sources */,
 				0E336ACD1DA2A7D500F3EB0C /* AppDelegate.swift in Sources */,
 				0E336AE51DA2ACF800F3EB0C /* FamilyViewController.swift in Sources */,
@@ -314,6 +318,7 @@
 				0E336ADD1DA2A7D500F3EB0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
