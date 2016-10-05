@@ -21,28 +21,29 @@
                                 <rect key="frame" x="352" y="285" width="46" height="30"/>
                                 <state key="normal" title="white"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="293" y="285" width="46" height="30"/>
+                                    <rect key="frame" x="301" y="647" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="iXk-LB-HMa" kind="show" id="YeZ-Hb-0zd"/>
+                                    <action selector="page3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxH-xe-lLU"/>
+                                    <segue destination="iXk-LB-HMa" kind="show" identifier="toPage4FromMain" id="YeZ-Hb-0zd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXz-hd-c2d">
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" title="cyan"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="285" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="647" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="PianoPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UV2-fg-cIb"/>
-                                    <segue destination="LSk-Rv-ReU" kind="show" identifier="toPianoPage" id="01G-Nj-E8T"/>
+                                    <segue destination="LSk-Rv-ReU" kind="show" identifier="toPianoPageFromMain" id="01G-Nj-E8T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPJ-hM-lCu">
                                 <rect key="frame" x="204" y="285" width="48" height="30"/>
                                 <state key="normal" title="red"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="56" y="285" width="48" height="30"/>
+                                    <rect key="frame" x="48" y="647" width="48" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="page2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P94-f6-PeJ"/>
@@ -53,8 +54,11 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="yellow"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="375" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="695" width="46" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="page5Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wcw-aK-pqw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.61895240252711714" blue="0.0019341921633865278" alpha="1" colorSpace="calibratedRGB"/>
@@ -70,7 +74,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <segue destination="O6v-mi-x4g" kind="show" id="SrF-fP-xus"/>
+                        <segue destination="O6v-mi-x4g" kind="show" identifier="toPage5FromMain" id="SrF-fP-xus"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -93,7 +97,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Home"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="72" y="507" width="46" height="30"/>
+                                    <rect key="frame" x="76" y="664" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="QJ9-pr-d2r"/>
@@ -103,28 +107,28 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="cyan"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="184" y="507" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="664" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="LSk-Rv-ReU" kind="show" id="Zzh-XS-U8O"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQQ-YK-VLT">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="White"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="298" y="507" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="iXk-LB-HMa" kind="show" id="43Y-bi-ouE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kh8-Ba-upx">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="yellow"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="184" y="385" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="727" width="46" height="30"/>
                                 </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQQ-YK-VLT">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="White"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="290" y="664" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="iXk-LB-HMa" kind="show" id="43Y-bi-ouE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.28936661545109332" blue="0.21445721888616898" alpha="1" colorSpace="calibratedRGB"/>
@@ -132,16 +136,16 @@
                             <mask key="subviews">
                                 <exclude reference="u4P-kt-ScM"/>
                                 <exclude reference="jF6-Yd-oNN"/>
-                                <exclude reference="sQQ-YK-VLT"/>
                                 <exclude reference="Kh8-Ba-upx"/>
+                                <exclude reference="sQQ-YK-VLT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="u4P-kt-ScM"/>
                                 <include reference="jF6-Yd-oNN"/>
-                                <include reference="sQQ-YK-VLT"/>
                                 <include reference="Kh8-Ba-upx"/>
+                                <include reference="sQQ-YK-VLT"/>
                             </mask>
                         </variation>
                     </view>
@@ -169,7 +173,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Home"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="35" y="385" width="46" height="30"/>
+                                    <rect key="frame" x="63" y="664" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="cIr-jo-CeQ"/>
@@ -179,30 +183,30 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="cyan"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="385" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="664" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="LSk-Rv-ReU" kind="show" id="gkE-Fq-UAb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJw-r6-oxu">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="red"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="327" y="385" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="uRR-fy-0Wa" kind="show" id="2Yx-M4-qBJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiJ-Ky-Pk7">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="yellow"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="469" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="738" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="O6v-mi-x4g" kind="show" id="q5J-O7-fLW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJw-r6-oxu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="red"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="299" y="664" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="uRR-fy-0Wa" kind="show" id="2Yx-M4-qBJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -211,16 +215,16 @@
                             <mask key="subviews">
                                 <exclude reference="1OT-6b-0aw"/>
                                 <exclude reference="1PX-dE-BAy"/>
-                                <exclude reference="pJw-r6-oxu"/>
                                 <exclude reference="RiJ-Ky-Pk7"/>
+                                <exclude reference="pJw-r6-oxu"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="1OT-6b-0aw"/>
                                 <include reference="1PX-dE-BAy"/>
-                                <include reference="pJw-r6-oxu"/>
                                 <include reference="RiJ-Ky-Pk7"/>
+                                <include reference="pJw-r6-oxu"/>
                             </mask>
                         </variation>
                     </view>
@@ -245,7 +249,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="red"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="124" y="412" width="60" height="30"/>
+                                    <rect key="frame" x="170" y="679" width="60" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="uRR-fy-0Wa" kind="show" id="RGe-rb-yqZ"/>
@@ -255,7 +259,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="white"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="232" y="412" width="46" height="30"/>
+                                    <rect key="frame" x="278" y="679" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="iXk-LB-HMa" kind="show" id="vrA-Ye-59K"/>
@@ -265,7 +269,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Home"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="281" width="46" height="30"/>
+                                    <rect key="frame" x="70" y="679" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="O6Z-ua-nWQ"/>
@@ -275,7 +279,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="yellow"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="499" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="731" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="O6v-mi-x4g" kind="show" id="ET7-jW-sMD"/>
@@ -320,7 +324,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="home"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="277" width="46" height="30"/>
+                                    <rect key="frame" x="74" y="625" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="9sP-ex-nvl"/>
@@ -330,30 +334,30 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="red"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="385" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="625" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="uRR-fy-0Wa" kind="show" id="NWq-n4-xaO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWR-61-mlm">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="white"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="289" y="385" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="iXk-LB-HMa" kind="show" id="jQx-VI-vHj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKx-rq-aWz">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="cyan"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="48" y="385" width="46" height="30"/>
+                                    <rect key="frame" x="289" y="625" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="LSk-Rv-ReU" kind="show" id="WKe-1o-vbL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWR-61-mlm">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="white"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="706" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="iXk-LB-HMa" kind="show" id="jQx-VI-vHj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -362,16 +366,16 @@
                             <mask key="subviews">
                                 <exclude reference="33h-gE-OwA"/>
                                 <exclude reference="HH7-ck-qPa"/>
-                                <exclude reference="UWR-61-mlm"/>
                                 <exclude reference="lKx-rq-aWz"/>
+                                <exclude reference="UWR-61-mlm"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="33h-gE-OwA"/>
                                 <include reference="HH7-ck-qPa"/>
-                                <include reference="UWR-61-mlm"/>
                                 <include reference="lKx-rq-aWz"/>
+                                <include reference="UWR-61-mlm"/>
                             </mask>
                         </variation>
                     </view>
@@ -383,9 +387,9 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Zzh-XS-U8O"/>
-        <segue reference="sUD-UW-7we"/>
-        <segue reference="QJ9-pr-d2r"/>
-        <segue reference="pnR-5h-jgb"/>
-        <segue reference="43Y-bi-ouE"/>
+        <segue reference="RGe-rb-yqZ"/>
+        <segue reference="ET7-jW-sMD"/>
+        <segue reference="O6Z-ua-nWQ"/>
+        <segue reference="vrA-Ye-59K"/>
     </inferredMetricsTieBreakers>
 </document>

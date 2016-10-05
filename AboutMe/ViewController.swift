@@ -27,7 +27,15 @@ class ViewController: UIViewController {
 
     @IBAction func PianoPage(sender: UIButton)
     {
-        performSegueWithIdentifier("toPianoPage", sender:sender)
+        performSegueWithIdentifier("toPianoPageFromMain", sender:sender)
+    }
+    @IBAction func page3Button(sender: AnyObject)
+    {
+        performSegueWithIdentifier("toPage4FromMain", sender: sender)
+    }
+    @IBAction func page5Button(sender: AnyObject)
+    {
+        performSegueWithIdentifier("toPage5FromMain", sender: sender)
     }
 }
 
