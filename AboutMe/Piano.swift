@@ -14,4 +14,20 @@ class Piano : UIViewController
     {
         super.viewDidLoad()
     }
+    @IBAction func HomeButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToMainFromPiano", sender:sender)
+    }
+    @IBAction func UpdateButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToUpdateFromPiano", sender:sender)
+    }
+    @IBAction func FamilyButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToFamilyFromPiano", sender:sender)
+    }
+    @IBAction func Page5Button(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToPage5FromPiano", sender:sender)
+    }
 }

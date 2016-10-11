@@ -14,4 +14,20 @@ class UpdatedViewController: UIViewController
     {
         super.viewDidLoad()
     }
+    @IBAction func HomeButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToMainFromUpdate", sender:sender)
+    }
+    @IBAction func PianoButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToPianoFromUpdate", sender:sender)
+    }
+    @IBAction func FamilyButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToFamilyFromUpdate", sender:sender)
+    }
+    @IBAction func Page5Button(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToPage5FromUpdate", sender:sender)
+    }
 }

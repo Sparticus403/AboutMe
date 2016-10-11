@@ -14,4 +14,20 @@ class FamilyViewController : UIViewController
     {
         super.viewDidLoad()
     }
+    @IBAction func HomeButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToMainFromFamily", sender:sender)
+    }
+    @IBAction func PianoButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToPianoFromFamily", sender:sender)
+    }
+    @IBAction func UpdateButton(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToUpdateFromFamily", sender:sender)
+    }
+    @IBAction func Page5Button(sender: UIButton)
+    {
+        performSegueWithIdentifier("ToPage5FromFamily", sender:sender)
+    }
 }
