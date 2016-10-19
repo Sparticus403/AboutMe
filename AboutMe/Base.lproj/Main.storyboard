@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,11 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPJ-hM-lCu">
+                                <rect key="frame" x="204" y="285" width="48" height="30"/>
+                                <state key="normal" title="red"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="285" width="48" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="696" width="48" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="page2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P94-f6-PeJ"/>
+                                    <segue destination="uRR-fy-0Wa" kind="show" identifier="toUpdateFromMain" id="sUD-UW-7we"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnn-V1-qF8">
                                 <rect key="frame" x="352" y="285" width="46" height="30"/>
                                 <state key="normal" title="white"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="301" y="647" width="46" height="30"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="224" y="285" width="46" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="287" y="696" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="page3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxH-xe-lLU"/>
@@ -31,53 +49,113 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXz-hd-c2d">
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" title="cyan"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="136" y="647" width="46" height="30"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="121" y="285" width="46" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="117" y="696" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="PianoPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UV2-fg-cIb"/>
                                     <segue destination="LSk-Rv-ReU" kind="show" identifier="toPianoPageFromMain" id="01G-Nj-E8T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPJ-hM-lCu">
-                                <rect key="frame" x="204" y="285" width="48" height="30"/>
-                                <state key="normal" title="red"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="48" y="647" width="48" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="page2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P94-f6-PeJ"/>
-                                    <segue destination="uRR-fy-0Wa" kind="show" identifier="toUpdateFromMain" id="sUD-UW-7we"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vp-9r-o2L">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="yellow"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="216" y="647" width="46" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="page5Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wcw-aK-pqw"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NameIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gki-Sz-AJ7">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="42" y="96" width="317" height="81"/>
-                                </variation>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.61895240252711714" blue="0.0019341921633865278" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.03106207005679535" green="0.28000710227272729" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tnn-V1-qF8" firstAttribute="leading" secondItem="OXz-hd-c2d" secondAttribute="trailing" constant="57" id="1Nt-On-pt7"/>
+                            <constraint firstItem="vPJ-hM-lCu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="29" id="8fJ-hs-yJS">
+                                <variation key="heightClass=regular-widthClass=compact" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="vPJ-hM-lCu" firstAttribute="centerY" secondItem="OXz-hd-c2d" secondAttribute="centerY" id="Avx-RD-etf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vPJ-hM-lCu" secondAttribute="bottom" constant="168" id="EeA-RM-nm7">
+                                <variation key="heightClass=regular-widthClass=compact" constant="74"/>
+                            </constraint>
+                            <constraint firstItem="OXz-hd-c2d" firstAttribute="centerY" secondItem="7Vp-9r-o2L" secondAttribute="centerY" id="EsC-N3-elN"/>
+                            <constraint firstItem="gki-Sz-AJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Im8-Sf-2zT"/>
+                            <constraint firstItem="OXz-hd-c2d" firstAttribute="leading" secondItem="vPJ-hM-lCu" secondAttribute="trailing" constant="33" id="bnA-o1-YFW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vPJ-hM-lCu" secondAttribute="bottom" constant="85" id="fXY-TB-R3Z"/>
+                            <constraint firstItem="gki-Sz-AJ7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="116" id="gVv-1W-aTs">
+                                <variation key="heightClass=regular-widthClass=compact" constant="78"/>
+                            </constraint>
+                            <constraint firstItem="7Vp-9r-o2L" firstAttribute="leading" secondItem="OXz-hd-c2d" secondAttribute="trailing" constant="44" id="gdN-bo-dJf"/>
+                            <constraint firstItem="OXz-hd-c2d" firstAttribute="leading" secondItem="vPJ-hM-lCu" secondAttribute="trailing" constant="53" id="gmg-Oi-eAs"/>
+                            <constraint firstItem="7Vp-9r-o2L" firstAttribute="centerY" secondItem="Tnn-V1-qF8" secondAttribute="centerY" id="gte-7C-ca3"/>
+                            <constraint firstItem="Tnn-V1-qF8" firstAttribute="leading" secondItem="7Vp-9r-o2L" secondAttribute="trailing" constant="34" id="ixz-KC-SBA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tnn-V1-qF8" secondAttribute="bottom" constant="168" id="o0E-ri-KGJ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="74"/>
+                            </constraint>
+                            <constraint firstItem="gki-Sz-AJ7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="q4O-Hd-Iqp">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstAttribute="leadingMargin" secondItem="vPJ-hM-lCu" secondAttribute="leading" id="qyG-vw-6C2"/>
+                            <constraint firstItem="vPJ-hM-lCu" firstAttribute="centerY" secondItem="OXz-hd-c2d" secondAttribute="centerY" id="uuX-ri-JHL"/>
+                            <constraint firstItem="OXz-hd-c2d" firstAttribute="centerY" secondItem="Tnn-V1-qF8" secondAttribute="centerY" id="zzR-ur-D0z"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="7Vp-9r-o2L"/>
                                 <exclude reference="gki-Sz-AJ7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Im8-Sf-2zT"/>
+                                <exclude reference="gVv-1W-aTs"/>
+                                <exclude reference="q4O-Hd-Iqp"/>
+                                <exclude reference="8fJ-hs-yJS"/>
+                                <exclude reference="Avx-RD-etf"/>
+                                <exclude reference="qyG-vw-6C2"/>
+                                <exclude reference="uuX-ri-JHL"/>
+                                <exclude reference="EsC-N3-elN"/>
+                                <exclude reference="bnA-o1-YFW"/>
+                                <exclude reference="gmg-Oi-eAs"/>
+                                <exclude reference="zzR-ur-D0z"/>
+                                <exclude reference="1Nt-On-pt7"/>
+                                <exclude reference="ixz-KC-SBA"/>
+                                <exclude reference="EeA-RM-nm7"/>
+                                <exclude reference="fXY-TB-R3Z"/>
+                                <exclude reference="o0E-ri-KGJ"/>
+                                <exclude reference="gdN-bo-dJf"/>
+                                <exclude reference="gte-7C-ca3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="qyG-vw-6C2"/>
+                                <include reference="uuX-ri-JHL"/>
+                                <include reference="gmg-Oi-eAs"/>
+                                <include reference="zzR-ur-D0z"/>
+                                <include reference="1Nt-On-pt7"/>
+                                <include reference="fXY-TB-R3Z"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="7Vp-9r-o2L"/>
                                 <include reference="gki-Sz-AJ7"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Im8-Sf-2zT"/>
+                                <include reference="gVv-1W-aTs"/>
+                                <include reference="q4O-Hd-Iqp"/>
+                                <include reference="8fJ-hs-yJS"/>
+                                <include reference="Avx-RD-etf"/>
+                                <include reference="EsC-N3-elN"/>
+                                <include reference="bnA-o1-YFW"/>
+                                <include reference="ixz-KC-SBA"/>
+                                <include reference="EeA-RM-nm7"/>
+                                <include reference="o0E-ri-KGJ"/>
+                                <include reference="gdN-bo-dJf"/>
+                                <include reference="gte-7C-ca3"/>
                             </mask>
                         </variation>
                     </view>
@@ -87,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="436.5" y="417.75"/>
+            <point key="canvasLocation" x="436.5" y="417"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="W35-Ft-cDN">
@@ -105,39 +183,29 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Home"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="664" width="46" height="30"/>
+                                    <rect key="frame" x="20" y="606" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="HomeButton:" destination="uRR-fy-0Wa" eventType="touchUpInside" id="c8F-uT-uGX"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toMainFromUpdate" id="QJ9-pr-d2r"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ToMainFromUpdate" id="QJ9-pr-d2r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jF6-Yd-oNN">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="cyan"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="139" y="664" width="46" height="30"/>
+                                    <rect key="frame" x="139" y="606" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="PianoButton:" destination="uRR-fy-0Wa" eventType="touchUpInside" id="4Bh-GA-ClR"/>
                                     <segue destination="LSk-Rv-ReU" kind="show" identifier="ToPianoFromUpdate" id="Zzh-XS-U8O"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kh8-Ba-upx">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="yellow"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="334" y="664" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="Page5Button:" destination="uRR-fy-0Wa" eventType="touchUpInside" id="Mce-Ih-CEn"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQQ-YK-VLT">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="White"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="240" y="664" width="46" height="30"/>
+                                    <rect key="frame" x="232" y="606" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="FamilyButton:" destination="uRR-fy-0Wa" eventType="touchUpInside" id="xAa-l5-BAd"/>
@@ -150,24 +218,34 @@
                                     <rect key="frame" x="33" y="20" width="334" height="159"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kh8-Ba-upx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="yellow"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="334" y="606" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Page5Button:" destination="uRR-fy-0Wa" eventType="touchUpInside" id="Mce-Ih-CEn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="u4P-kt-ScM"/>
                                 <exclude reference="jF6-Yd-oNN"/>
-                                <exclude reference="Kh8-Ba-upx"/>
                                 <exclude reference="sQQ-YK-VLT"/>
                                 <exclude reference="uXu-Sl-V1x"/>
+                                <exclude reference="Kh8-Ba-upx"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="u4P-kt-ScM"/>
                                 <include reference="jF6-Yd-oNN"/>
-                                <include reference="Kh8-Ba-upx"/>
                                 <include reference="sQQ-YK-VLT"/>
                                 <include reference="uXu-Sl-V1x"/>
+                                <include reference="Kh8-Ba-upx"/>
                             </mask>
                         </variation>
                     </view>
@@ -195,29 +273,18 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="cyan"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="664" width="46" height="30"/>
+                                    <rect key="frame" x="112" y="623" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="PianoButton:" destination="iXk-LB-HMa" eventType="touchUpInside" id="c9x-oe-g8s"/>
                                     <segue destination="LSk-Rv-ReU" kind="show" identifier="ToPianoFromFamily" id="gkE-Fq-UAb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiJ-Ky-Pk7">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="yellow"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="298" y="664" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="Page5Button:" destination="iXk-LB-HMa" eventType="touchUpInside" id="Kl0-MT-29w"/>
-                                    <segue destination="O6v-mi-x4g" kind="show" identifier="ToPage5FromFamily" id="q5J-O7-fLW"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJw-r6-oxu">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="red"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="204" y="664" width="46" height="30"/>
+                                    <rect key="frame" x="203" y="623" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="UpdateButton:" destination="iXk-LB-HMa" eventType="touchUpInside" id="OwX-vE-rvT"/>
@@ -228,11 +295,22 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Home"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="664" width="46" height="30"/>
+                                    <rect key="frame" x="20" y="623" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="HomeButton:" destination="iXk-LB-HMa" eventType="touchUpInside" id="5hY-i1-f23"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="ToMainFromFamily" id="cIr-jo-CeQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiJ-Ky-Pk7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="yellow"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="293" y="623" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Page5Button:" destination="iXk-LB-HMa" eventType="touchUpInside" id="Kl0-MT-29w"/>
+                                    <segue destination="O6v-mi-x4g" kind="show" identifier="ToPage5FromFamily" id="q5J-O7-fLW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -240,17 +318,17 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="1PX-dE-BAy"/>
-                                <exclude reference="RiJ-Ky-Pk7"/>
                                 <exclude reference="pJw-r6-oxu"/>
                                 <exclude reference="1OT-6b-0aw"/>
+                                <exclude reference="RiJ-Ky-Pk7"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="1PX-dE-BAy"/>
-                                <include reference="RiJ-Ky-Pk7"/>
                                 <include reference="pJw-r6-oxu"/>
                                 <include reference="1OT-6b-0aw"/>
+                                <include reference="RiJ-Ky-Pk7"/>
                             </mask>
                         </variation>
                     </view>
@@ -275,7 +353,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="red"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="111" y="679" width="60" height="30"/>
+                                    <rect key="frame" x="120" y="623" width="60" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="UpdateButton:" destination="LSk-Rv-ReU" eventType="touchUpInside" id="mPX-3J-Kov"/>
@@ -286,33 +364,33 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="white"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="206" y="679" width="46" height="30"/>
+                                    <rect key="frame" x="213" y="623" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="FamilyButton:" destination="LSk-Rv-ReU" eventType="touchUpInside" id="Yu4-SD-9or"/>
                                     <segue destination="iXk-LB-HMa" kind="show" identifier="ToFamilyFromPiano" id="vrA-Ye-59K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9He-jj-CJL">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Home"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="37" y="679" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="HomeButton:" destination="LSk-Rv-ReU" eventType="touchUpInside" id="bIN-Zf-ZPW"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ToMainFromPiano" id="O6Z-ua-nWQ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-Oe-NDA">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="yellow"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="281" y="679" width="46" height="30"/>
+                                    <rect key="frame" x="292" y="623" width="46" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="Page5Button:" destination="LSk-Rv-ReU" eventType="touchUpInside" id="Ch3-3m-9rM"/>
                                     <segue destination="O6v-mi-x4g" kind="show" identifier="ToPage5FromPiano" id="ET7-jW-sMD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9He-jj-CJL">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Home"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="38" y="623" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="HomeButton:" destination="LSk-Rv-ReU" eventType="touchUpInside" id="bIN-Zf-ZPW"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ToMainFromPiano" id="O6Z-ua-nWQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -321,16 +399,16 @@
                             <mask key="subviews">
                                 <exclude reference="oNU-W3-mQS"/>
                                 <exclude reference="cPe-8a-fBS"/>
-                                <exclude reference="9He-jj-CJL"/>
                                 <exclude reference="CYJ-Oe-NDA"/>
+                                <exclude reference="9He-jj-CJL"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="oNU-W3-mQS"/>
                                 <include reference="cPe-8a-fBS"/>
-                                <include reference="9He-jj-CJL"/>
                                 <include reference="CYJ-Oe-NDA"/>
+                                <include reference="9He-jj-CJL"/>
                             </mask>
                         </variation>
                     </view>
@@ -348,6 +426,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pZE-mE-4da"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="x95-c9-FrQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33h-gE-OwA">
@@ -424,10 +503,10 @@
         <image name="VideoGamesIcon" width="833" height="119"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QJ9-pr-d2r"/>
         <segue reference="sUD-UW-7we"/>
+        <segue reference="QJ9-pr-d2r"/>
         <segue reference="YeZ-Hb-0zd"/>
-        <segue reference="SrF-fP-xus"/>
         <segue reference="01G-Nj-E8T"/>
+        <segue reference="SrF-fP-xus"/>
     </inferredMetricsTieBreakers>
 </document>

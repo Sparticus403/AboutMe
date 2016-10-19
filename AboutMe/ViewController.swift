@@ -22,7 +22,7 @@ class ViewController: UIViewController {
 
     @IBAction func page2(sender: UIButton)
     {
-        performSegueWithIdentifier("toUpdatedFromMain", sender:sender)
+        performSegueWithIdentifier("toUpdateFromMain", sender:sender)
     }
 
     @IBAction func PianoPage(sender: UIButton)
